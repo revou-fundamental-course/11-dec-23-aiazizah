@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="JS/script.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="foto">
+            <img src="../../Pictures/Saved Pictures/manusia lidi.jpg" alt="" class="logo">
+        </div>
+        <div class="nav">
+            <button class="a">Home</button>
+            <button class="a">Our Profile</button>
+            <button class="a">Achievement</button>
+            <button class="a">Massage Us</button>
+        </div>
+    </div>
+    <div class="section">
+        <h1 class="h1">
+            Hi Harfi, Welcome To Website
+        </h1 >
+        <p class="ph2">
+            Ini Adalah Website Latihan Pertama
+        </p>
+    </div>
+    <h1 class="h11">
+        Our Facilitation
+    </h1>
+    <div class="section1">
+        <div class="lingkaran"></div>
+        <div class="lingkaran"></div>
+        <div class="lingkaran"></div>
+
+    </div>
+    <div class="section2">
+        <div class="bg1">
+            <div class="input">
+                <label for="Nama">Nama : </label>
+                <input type="text" placeholder="Masukan Nama" id="nama"> 
+            </div>
+            <div class="input">
+                <label for="Ttl" >Tanggal lahir : </label>
+                <input type="date" id="tl">
+            </div>
+            <div class="input">
+                <label for="Jk" >Jenis Kelamin : </label>
+                <input type="radio" id="jk">
+                <label for="lk">Laki-Laki</label>
+                <input type="radio" id="jk">
+                <label for="pr">Perempuan</label>
+            </div>
+            <div class="pesan">
+                <label for="pesan" >Pesan : </label>
+                <input type="text" style="height: 50px;" id="ps">
+            </div>
+            <div class="input">
+                <input type="submit" id="submit" onclick="klik()" style="padding: 5px 90px;">
+            </div>
+        </div>
+        <div class="bg2">
+            <div class="pesn" id="psn">
+                
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function klik(){
+        var nama = document.getElementById('nama').value;
+        var tl = document.getElementById('tl').value;
+        var ps = document.getElementById('ps').value;
+        var output = document.getElementById('psn').innerHTML= `Nama : ` + nama + `<br>tanggal lahir:` + tl +  `<br>Pesan : ` +ps;
+    }
+</script>
+
+</html>
